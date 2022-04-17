@@ -1,0 +1,16 @@
+DxLib_VC/
+
+# VS2022 Cache files
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
