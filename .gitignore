@@ -17,3 +17,5 @@ ipch/
 
 x64/
 NOT_README.md
+.vs/
+Log.txt
