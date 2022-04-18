@@ -18,6 +18,27 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Component\Define.h" />
+    <ClInclude Include="src\Component\Error.h" />
+    <ClInclude Include="src\Component\eScene.h" />
+    <ClInclude Include="src\Component\Parameter.h" />
+    <ClInclude Include="src\IOnChangedListener.h" />
+    <ClInclude Include="src\Looper.h" />
+    <ClInclude Include="src\scene\AbstractScene.h" />
+    <ClInclude Include="src\scene\TitleScene.h" />
+    <ClInclude Include="src\SystemMain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Component\Define.cpp" />
+    <ClCompile Include="src\Component\Error.cpp" />
+    <ClCompile Include="src\Component\Parameter.cpp" />
+    <ClCompile Include="src\Looper.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\scene\AbstractScene.cpp" />
+    <ClCompile Include="src\scene\TitleScene.cpp" />
+    <ClCompile Include="src\SystemMain.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -72,12 +93,14 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\souta\CppGames\repos\first_project\src\scene\;C:\Users\souta\CppGames\repos\first_project\src\;C:\Users\souta\CppGames\repos\first_project\src\Component\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\souta\CppGames\repos\first_project\src\scene\;C:\Users\souta\CppGames\repos\first_project\src\;C:\Users\souta\CppGames\repos\first_project\src\Component\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -150,9 +173,6 @@
       <AdditionalLibraryDirectories>"C:\Users\souta\Downloads\DxLib_VC\プロジェクトに追加すべきファイル_VC用"</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="DrawPixel.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

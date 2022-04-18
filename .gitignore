@@ -14,3 +14,6 @@ ipch/
 *.user
 *.userosscache
 *.sln.docstates
+
+x64/
+NOT_README.md
