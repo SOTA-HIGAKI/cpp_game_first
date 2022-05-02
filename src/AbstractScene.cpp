@@ -6,7 +6,7 @@
  * @param parameter 前のシーンから渡されたパラメータ
  */
 AbstractScene::AbstractScene(
-    IOnSceneCangedListener *impl,
+    IOnSceneChangedListener *impl,
     const Parameter &parameter)
     : _implSceneChanged(impl) {
 }

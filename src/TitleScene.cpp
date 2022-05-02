@@ -2,7 +2,10 @@
 
 #include "DxLib.h"
 
-TitleScene::TitleScene(IOnSceneChagedListener* impl, const Parameter& parameter) {
+TitleScene::TitleScene(IOnSceneChangedListener* impl, const Parameter& parameter) {
+}
+
+TitleScene::~TitleScene() {
 }
 
 void TitleScene::update() {

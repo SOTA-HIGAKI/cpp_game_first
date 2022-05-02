@@ -4,9 +4,9 @@
 #include <stack>
 
 #include "AbstractScene.h"
-#include "IOnSceneChagedListener.h"
+#include "IOnSceneChangedListener.h"
 
-class Looper final : public IOnSceneChagedListener {
+class Looper final : public IOnSceneChangedListener {
     public:
     Looper();
     ~Looper() = default;

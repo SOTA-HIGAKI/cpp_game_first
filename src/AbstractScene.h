@@ -1,16 +1,16 @@
 #pragma once
 
-#include "IOnChangedListener.h"
+#include "IOnSceneChangedListener.h"
 #include "Parameter.h"
 
-class IOnChangedListener;
+class IOnSceneChangedListener;
 
 class AbstractScene {
     protected:
-    IOnChangedListener* _implSceneChanged;
+    IOnSceneChangedListener* _implSceneChanged;
 
     public:
-    AbstractScene(IOnSceneChagedListener* impl, const Parameter& parameter);
+    AbstractScene(IOnSceneChangedListener* impl, const Parameter& parameter);
     virtual ~AbstractScene() = default;
     virtual void update() = 0;
     virtual void draw() = 0;

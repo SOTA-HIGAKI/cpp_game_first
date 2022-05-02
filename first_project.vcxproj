@@ -19,25 +19,25 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Component\Define.h" />
-    <ClInclude Include="src\Component\Error.h" />
-    <ClInclude Include="src\Component\eScene.h" />
-    <ClInclude Include="src\Component\Parameter.h" />
-    <ClInclude Include="src\IOnChangedListener.h" />
-    <ClInclude Include="src\Looper.h" />
-    <ClInclude Include="src\scene\AbstractScene.h" />
-    <ClInclude Include="src\scene\TitleScene.h" />
-    <ClInclude Include="src\SystemMain.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\Component\Define.cpp" />
-    <ClCompile Include="src\Component\Error.cpp" />
-    <ClCompile Include="src\Component\Parameter.cpp" />
+    <ClCompile Include="src\AbstractScene.cpp" />
+    <ClCompile Include="src\Define.cpp" />
+    <ClCompile Include="src\Error.cpp" />
     <ClCompile Include="src\Looper.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\scene\AbstractScene.cpp" />
-    <ClCompile Include="src\scene\TitleScene.cpp" />
+    <ClCompile Include="src\Parameter.cpp" />
     <ClCompile Include="src\SystemMain.cpp" />
+    <ClCompile Include="src\TitleScene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\AbstractScene.h" />
+    <ClInclude Include="src\Define.h" />
+    <ClInclude Include="src\Error.h" />
+    <ClInclude Include="src\eScene.h" />
+    <ClInclude Include="src\IOnChangedListener.h" />
+    <ClInclude Include="src\Looper.h" />
+    <ClInclude Include="src\Parameter.h" />
+    <ClInclude Include="src\SystemMain.h" />
+    <ClInclude Include="src\TitleScene.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
