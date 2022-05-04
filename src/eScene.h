@@ -1,7 +1,8 @@
 #pragma once
 
 // all scenes
-enum eScene {
+enum eScene
+{
     Title,
     Game
-}
+};
