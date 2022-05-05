@@ -15,12 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\AbstractScene.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Define.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="src\Error.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
@@ -30,27 +24,24 @@
     <ClCompile Include="src\main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="src\Parameter.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="src\SystemMain.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="src\TitleScene.cpp">
+    <ClCompile Include="src\scene\AbstractScene.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\TitleScene.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Component\Define.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Component\Parameter.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\AbstractScene.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Define.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="src\Error.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="src\eScene.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
     <ClInclude Include="src\IOnChangedListener.h">
@@ -59,13 +50,22 @@
     <ClInclude Include="src\Looper.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="src\Parameter.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="src\SystemMain.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="src\TitleScene.h">
+    <ClInclude Include="src\scene\AbstractScene.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\TitleScene.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Component\Define.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Component\eScene.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Component\Parameter.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
   </ItemGroup>
