@@ -25,6 +25,7 @@
     <ClCompile Include="src\Looper.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\scene\AbstractScene.cpp" />
+    <ClCompile Include="src\scene\GameScene.cpp" />
     <ClCompile Include="src\scene\TitleScene.cpp" />
     <ClCompile Include="src\SystemMain.cpp" />
   </ItemGroup>
@@ -36,6 +37,7 @@
     <ClInclude Include="src\IOnChangedListener.h" />
     <ClInclude Include="src\Looper.h" />
     <ClInclude Include="src\scene\AbstractScene.h" />
+    <ClInclude Include="src\scene\GameScene.h" />
     <ClInclude Include="src\scene\TitleScene.h" />
     <ClInclude Include="src\SystemMain.h" />
   </ItemGroup>
