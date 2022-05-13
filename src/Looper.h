@@ -1,5 +1,7 @@
 #pragma once
 
+#include <Fps.h>
+
 #include <memory>
 #include <stack>
 
@@ -10,7 +12,7 @@ class Looper final : public IOnSceneChangedListener {
     public:
     Looper();
     ~Looper() = default;
-    bool loop() const;
+    bool loop();
     void onSceneChanged(
         const eScene scene,
         const Parameter& parameter,
@@ -18,4 +20,5 @@ class Looper final : public IOnSceneChangedListener {
 
     private:
     std::stack<std::shared_ptr<AbstractScene>> _sceneStack;
+    Fps _fps;
 };

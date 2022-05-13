@@ -19,7 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Component\CalcUtils.cpp" />
     <ClCompile Include="src\Component\Define.cpp" />
+    <ClCompile Include="src\Component\Fps.cpp" />
     <ClCompile Include="src\Component\Parameter.cpp" />
     <ClCompile Include="src\Error.cpp" />
     <ClCompile Include="src\Looper.cpp" />
@@ -30,8 +32,11 @@
     <ClCompile Include="src\SystemMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Component\CalcUtils.h" />
     <ClInclude Include="src\Component\Define.h" />
     <ClInclude Include="src\Component\eScene.h" />
+    <ClInclude Include="src\Component\Fps.h" />
+    <ClInclude Include="src\Component\Macro.h" />
     <ClInclude Include="src\Component\Parameter.h" />
     <ClInclude Include="src\Error.h" />
     <ClInclude Include="src\IOnSceneChangedListener.h" />

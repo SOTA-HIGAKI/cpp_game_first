@@ -1,5 +1,7 @@
 #include "Looper.h"
 
+#include <Macro.h>
+
 #include "Error.h"
 #include "GameScene.h"
 #include "TitleScene.h"
@@ -14,9 +16,13 @@ Looper::Looper() {
 /*!
  * @brief スタックのトップのシーンの処理をする
  */
-bool Looper::loop() const {
+bool Looper::loop() {  // constオブジェクトからは、constメンバ関数しか呼び出せない ?
+                       // メンバ変数のメンバ変数も？だめっぽい const Fps ->
+                       // Fps&へthisポインタを変換できないと言われたので
     _sceneStack.top()->update();
     _sceneStack.top()->draw();
+    _fps.draw();
+    _fps.wait();
     return true;
 }
 
@@ -37,8 +43,12 @@ void Looper::onSceneChanged(
     }
 
     switch (scene) {
-        case Title: _sceneStack.push(make_shared<TitleScene>(this, parameter)); break;
-        case Game: _sceneStack.push(make_shared<GameScene>(this, parameter)); break;
-        default: break;
+        case eScene::Title:
+            _sceneStack.push(make_shared<TitleScene>(this, parameter));
+            break;
+        case eScene::Game:
+            _sceneStack.push(make_shared<GameScene>(this, parameter));
+            break;
+        default: ERR("Unexpected scene has called"); break;
     }
 }
