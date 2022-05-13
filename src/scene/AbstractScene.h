@@ -13,5 +13,5 @@ class AbstractScene {
     AbstractScene(IOnSceneChangedListener* impl, const Parameter& parameter);
     virtual ~AbstractScene() = default;
     virtual void update() = 0;
-    virtual void draw() = 0;
+    virtual void draw() const = 0;
 };

@@ -9,6 +9,6 @@ int Parameter::get(std::string key) const {
     if (_map.end() == itr) {
         return Error;
     } else {
-        return itr->second;
+        return itr->second;  // value
     }
 }

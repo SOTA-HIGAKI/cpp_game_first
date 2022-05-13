@@ -7,5 +7,5 @@ class TitleScene : public AbstractScene {
     TitleScene(IOnSceneChangedListener* impl, const Parameter& parameter);
     virtual ~TitleScene();
     void update() override;
-    void draw() override;
+    void draw() const override;
 };

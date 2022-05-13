@@ -8,7 +8,7 @@ class GameScene : public AbstractScene {
     const static char* ParameterTagLevel;
 
     GameScene(IOnSceneChangedListener* impl, const Parameter& parameter);
-    virtual ~GameScene() = defalut;
+    virtual ~GameScene() = default;
 
     void update() override;
     void draw() const override;  // const だとメンバ変数の変更が行えない。

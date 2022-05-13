@@ -1,7 +1,8 @@
 #include "Looper.h"
 
+#include "Error.h"
+#include "GameScene.h"
 #include "TitleScene.h"
-#include "eScene.h"
 
 using namespace std;
 
@@ -29,4 +30,15 @@ void Looper::onSceneChanged(
     const eScene scene,
     const Parameter& parameter,
     const bool stackClear) {
+    if (stackClear) {
+        while (!_sceneStack.empty()) {
+            _sceneStack.pop();
+        }
+    }
+
+    switch (scene) {
+        case Title: _sceneStack.push(make_shared<TitleScene>(this, parameter)); break;
+        case Game: _sceneStack.push(make_shared<GameScene>(this, parameter)); break;
+        default: break;
+    }
 }

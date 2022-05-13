@@ -30,6 +30,9 @@
     <ClCompile Include="src\scene\AbstractScene.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="src\scene\GameScene.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
     <ClCompile Include="src\scene\TitleScene.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
@@ -39,15 +42,12 @@
     <ClCompile Include="src\Component\Parameter.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="src\scene\GameScene.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Error.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="src\IOnChangedListener.h">
+    <ClInclude Include="src\IOnSceneChangedListener.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
     <ClInclude Include="src\Looper.h">
@@ -57,6 +57,9 @@
       <Filter>ソース ファイル</Filter>
     </ClInclude>
     <ClInclude Include="src\scene\AbstractScene.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\GameScene.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
     <ClInclude Include="src\scene\TitleScene.h">
@@ -69,9 +72,6 @@
       <Filter>ソース ファイル</Filter>
     </ClInclude>
     <ClInclude Include="src\Component\Parameter.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="src\scene\GameScene.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
   </ItemGroup>

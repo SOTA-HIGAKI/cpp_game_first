@@ -34,7 +34,7 @@
     <ClInclude Include="src\Component\eScene.h" />
     <ClInclude Include="src\Component\Parameter.h" />
     <ClInclude Include="src\Error.h" />
-    <ClInclude Include="src\IOnChangedListener.h" />
+    <ClInclude Include="src\IOnSceneChangedListener.h" />
     <ClInclude Include="src\Looper.h" />
     <ClInclude Include="src\scene\AbstractScene.h" />
     <ClInclude Include="src\scene\GameScene.h" />

@@ -8,5 +8,5 @@
 AbstractScene::AbstractScene(
     IOnSceneChangedListener *impl,
     const Parameter &parameter)
-    : _implSceneChanged(impl) {
+    : _implSceneChanged(impl) {  // 初期化子リスト
 }

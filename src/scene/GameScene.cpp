@@ -11,6 +11,7 @@ GameScene::GameScene(IOnSceneChangedListener* impl, const Parameter& parameter)
 }
 
 void GameScene::update() {
+    // update‚Åˆ—‚Í‘S•”‘‚¢‚ÄAdraw‚Í•\¦‚·‚é‚¾‚¯
 }
 
 void GameScene::draw() const {
