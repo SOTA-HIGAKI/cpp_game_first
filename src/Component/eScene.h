@@ -1,7 +1,7 @@
 #pragma once
 
 // all scenes
-enum eScene
+enum class eScene : int
 {
     Title,
     Game

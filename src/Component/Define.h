@@ -7,7 +7,7 @@ class Define final {
 
     const static float PI;
 
-    enum eStage
+    enum class eStage : int
     {
         Stage1,
         Stage2,
@@ -18,7 +18,7 @@ class Define final {
         StageNum,
     };
 
-    enum eLevel
+    enum class eLevel : int
     {
         Easy,
         Normal,
