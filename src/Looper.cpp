@@ -4,6 +4,7 @@
 
 #include "Error.h"
 #include "GameScene.h"
+#include "KeyBoard.h"
 #include "TitleScene.h"
 
 using namespace std;
@@ -19,6 +20,7 @@ Looper::Looper() {
 bool Looper::loop() {  // constオブジェクトからは、constメンバ関数しか呼び出せない ?
                        // メンバ変数のメンバ変数も？だめっぽい const Fps ->
                        // Fps&へthisポインタを変換できないと言われたので
+    KeyBoard::getInstance()->update();
     _sceneStack.top()->update();
     _sceneStack.top()->draw();
     _fps.draw();
