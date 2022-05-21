@@ -1,11 +1,14 @@
-- DxLibを追加する必要あり
+- require DxLib
+- require dat/image
 
-## ファイル命名方法について
+## name formula
 
-先頭に型をつけるタイプ
-
-ex.
 ```
 eScene -> enum
 IOnChangeListener -> Interface
 ```
+
+## using design pattern
+
+- Singleton
+- Strategy
