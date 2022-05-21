@@ -1,19 +1,26 @@
 #include "GameScene.h"
 
 #include <DxLib.h>
+#include <Macro.h>
+
+using namespace std;
 
 const char* GameScene::ParameterTagLevel = "ParameterTagLevel";
 const char* GameScene::ParameterTagStage = "ParameterTagStage";
 
 GameScene::GameScene(IOnSceneChangedListener* impl, const Parameter& parameter)
     : AbstractScene(impl, parameter) {
-    _level = parameter.get(ParameterTagLevel);
+    player = make_shared<Player>();
+    board = make_shared<Board>();
 }
 
 void GameScene::update() {
+    player->update();
+    board->update();
     // update‚Åˆ—‚Í‘S•”‘‚¢‚ÄAdraw‚Í•\Ž¦‚·‚é‚¾‚¯
 }
 
 void GameScene::draw() const {
-    DrawFormatString(100, 100, GetColor(255, 255, 255), "Game level is ... %d", _level);
+    player->draw();
+    board->draw();
 }

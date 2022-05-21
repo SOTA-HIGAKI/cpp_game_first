@@ -1,6 +1,10 @@
 #pragma once
 
+#include <memory>
+
 #include "AbstractScene.h"
+#include "Board.h"
+#include "Player.h"
 
 class GameScene : public AbstractScene {
     public:
@@ -13,5 +17,6 @@ class GameScene : public AbstractScene {
     void update() override;
     void draw() const override;  // const だとメンバ変数の変更が行えない。
     private:
-    int _level;
+    std::shared_ptr<Player> player;
+    std::shared_ptr<Board> board;
 };

@@ -4,6 +4,7 @@
 #include <GameScene.h>
 
 #include "DxLib.h"
+#include "GamePad.h"
 #include "KeyBoard.h"
 
 TitleScene::TitleScene(IOnSceneChangedListener* impl, const Parameter& parameter)
@@ -14,7 +15,7 @@ TitleScene::~TitleScene() {
 }
 
 void TitleScene::update() {
-    if (KeyBoard::getInstance()->getPressingCount(KEY_INPUT_E) == 1) {
+    if (GamePad::getInstance()->get(ePad::shot) == 1) {
         Parameter parameter;
         parameter.set(
             GameScene::ParameterTagLevel,

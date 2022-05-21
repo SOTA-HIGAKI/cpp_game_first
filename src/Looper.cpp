@@ -3,13 +3,16 @@
 #include <Macro.h>
 
 #include "Error.h"
+#include "GamePad.h"
 #include "GameScene.h"
 #include "KeyBoard.h"
 #include "TitleScene.h"
+// #include "Image.h"
 
 using namespace std;
 
 Looper::Looper() {
+    // Image::getInstance()->load();
     Parameter parameter;
     _sceneStack.push(make_shared<TitleScene>(this, parameter));  //  make and push title
 }
@@ -21,6 +24,7 @@ bool Looper::loop() {  // constオブジェクトからは、constメンバ関�
                        // メンバ変数のメンバ変数も？だめっぽい const Fps ->
                        // Fps&へthisポインタを変換できないと言われたので
     KeyBoard::getInstance()->update();
+    GamePad::getInstance()->update();
     _sceneStack.top()->update();
     _sceneStack.top()->draw();
     _fps.draw();
